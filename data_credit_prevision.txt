@@ -1,0 +1,7 @@
+87.20% = Base line classifier
+----------------------------------------
+->Naive Bayes Algorithm
+
+accuracy = 93,8% (Incosistent values + missing values + StandarScaler)
+accuracy = 93,8% (Only with missing values)
+----------------------------------------

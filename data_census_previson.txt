@@ -1,0 +1,12 @@
+75.59% = Base line classifer
+-----------------------------------
+-> Naive Bayes algorithm
+
+accuracy = 47,67% (OneHotEnconder + Schelduling + StandardScaler)
+accuracy = 80,57% (Only StandardScaler)
+accuracy = 79,50% (Only OneHotEnconder)
+--------------------------------------
+
+
+
+
