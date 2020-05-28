@@ -1,2 +1,2 @@
 # Machine-Learning-studies
-Some tests of machine learning algorithms with purpose of my studies about this theme
+Some tests machine learning algorithms for my inital studies about this theme
