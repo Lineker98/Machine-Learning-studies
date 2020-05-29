@@ -23,6 +23,13 @@ accuracy = 83,90% (OneHotEncoder + StandardScaler)
 accuracy = 84,17% (Only StandardScaler)
 
 ----------------------------------------
+-> Knn Algorithm  k = 5 
+
+accuracy = 77,60% (OneHotEncoder + LabelEncoder)
+accuracy = 82,23% (OneHorEncoder + LabelEncode + StandardScaler)
+accuracy = 82,19% (OneHotEncoder + StandardScaler)
+
+------------------------------------------
 
 
 

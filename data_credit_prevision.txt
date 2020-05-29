@@ -20,3 +20,9 @@ accuracy = 98.2% (Fill only missing values, trees genereted = 30)
 accuracy = 98.8% (Fill only missing values, trees genereted = 50)
 
 -------------------------------------------
+-> Knn Algorithm k = 5
+
+accuracy = 83,6% (Incosistent and missing values)
+accuracy = 98,6% (Inconsistent and missingvalies + StandardScaler)
+
+--------------------------------------------
