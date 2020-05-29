@@ -1,7 +1,22 @@
 87.20% = Base line classifier
-----------------------------------------
+
+------------------------------------------
 ->Naive Bayes Algorithm
 
 accuracy = 93,8% (Incosistent values + missing values + StandarScaler)
 accuracy = 93,8% (Only with missing values)
-----------------------------------------
+-------------------------------------------
+->Decision Tree Algorithm
+
+accuracy = 98,8% (Fill only missing values)
+accuracy = 98,4% (Missing Values + Fill the inconsistent values with the mean)
+accuracy = 98,8% (Missing values + StandardScaler)
+
+--------------------------------------------
+-> Random Forest Algorithm
+
+accuracy = 97.8% (Fill only missing values, trees genereted = 10)
+accuracy = 98.2% (Fill only missing values, trees genereted = 30)
+accuracy = 98.8% (Fill only missing values, trees genereted = 50)
+
+-------------------------------------------

@@ -1,4 +1,5 @@
 75.59% = Base line classifer
+
 -----------------------------------
 -> Naive Bayes algorithm
 
@@ -6,7 +7,22 @@ accuracy = 47,67% (OneHotEnconder + Schelduling + StandardScaler)
 accuracy = 80,57% (Only StandardScaler)
 accuracy = 79,50% (Only OneHotEnconder)
 --------------------------------------
+-> Decision Tree Algorithm
 
+accuracy = 81,28% (Only LabelEnconder)
+accuracy = 81,02% (OneHotEncoder)
+accuracy = 81,04% (OneHotEncoder + Schelduling)
+accuracy = 81,29% (Only standardScaler)
+
+---------------------------------------
+-> Random Forest Algorithm
+
+accuracy = 84,21% (No preprocessing, only LabelEnconder)
+accuracy = 83,93% (OneHotEnconder)
+accuracy = 83,90% (OneHotEncoder + StandardScaler)
+accuracy = 84,17% (Only StandardScaler)
+
+----------------------------------------
 
 
 
