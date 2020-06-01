@@ -30,6 +30,13 @@ accuracy = 82,23% (OneHorEncoder + LabelEncode + StandardScaler)
 accuracy = 82,19% (OneHotEncoder + StandardScaler)
 
 ------------------------------------------
+-> Logistic regression Algorithm
+
+accuracy = 84,95% (OneHotEncoder + LabelEncoder + StandardScaler)
+accuracy = 81,84% (LabelEncodr + StandardScaler)
+accuracy = 79,48% (OneHotEncoder + LabelEncoder)
+
+-----------------------------------------------
 
 
 

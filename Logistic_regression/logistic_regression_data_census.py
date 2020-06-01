@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-   
+
 import pandas as pd
-from collections import Counter
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
-from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
     
@@ -19,7 +18,8 @@ base = pd.read_csv('../data_census.csv')
 predictors = base.iloc[:, 0:14].values
 classe = base.iloc[:, 14].values
     
-#Transformatios of predictor atributes from categorical for discreet attributes
+#Transformatios of predictors atributes
+#We will code categoricals atributes in discreet atributes
 labelencoder_predictors = LabelEncoder()
 predictors[:,1] = labelencoder_predictors.fit_transform(predictors[:,1])
 predictors[:,3] = labelencoder_predictors.fit_transform(predictors[:,3])
@@ -45,15 +45,12 @@ predictors = scaler.fit_transform(predictors)
 
 #Split the data set into training and test data
 predictors_training, predictors_test, classe_training, classe_test = train_test_split(predictors, classe, test_size=0.15, random_state=0)
-    
-#Base line classifier
-print(Counter(classe_test))
-    
-#We need criate our probabilistic matrix that will genereted by naive-bayes algorithm
-classifier = GaussianNB()
+
+#We need criate our logistic regression object model
+classifier = LogisticRegression(random_state=1)
 classifier.fit(predictors_training, classe_training)
 
-#After criate the matrix, we can make our predictions
+#After criate the shedule, we can make our predictions
 prediction = classifier.predict(predictors_test)
     
 #Here, we check results got through predictions

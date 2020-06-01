@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 
-#Reading database
+#Reading data set
 base = pd.read_csv("../data_credit.csv")
 
 #Split the data base between predictors and classes
@@ -20,7 +20,7 @@ imputer = SimpleImputer()
 imputer = imputer.fit(predictors[:, 1:4])
 predictors[:, 1:4] = imputer.transform(predictors[:, 1:4])
 
-#Split of the database between training and test data
+#Split of the data set between training and test data
 predictors_training, predictors_test, classe_training, classe_test = train_test_split(predictors, classe, test_size=0.25, random_state=0)
 
 #Now, we'll create our instance randomforest classifier, and than, creat our model forest with the data training

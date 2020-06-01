@@ -11,7 +11,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 
-#Reading database
+#Reading data set
 base = pd.read_csv('../data_census.csv')
 
 #Split the atributes between predictors and classes
@@ -43,7 +43,7 @@ classe = labelencoder_classe.fit_transform(classe)
 scaler = StandardScaler()
 predictors = scaler.fit_transform(predictors)
 
-#Split of the database between training and test data
+#Split of the data set between training and test data
 predictors_training, predictors_test, classe_training, classe_test = train_test_split(predictors, classe, test_size=0.15, random_state=0)
 
 #Now, we need criate our knn classifier
@@ -51,7 +51,7 @@ predictors_training, predictors_test, classe_training, classe_test = train_test_
 classifier = KNeighborsClassifier(n_neighbors=5, metric='minkowski', p=2)
 classifier.fit(predictors_training, classe_training)
 
-#After criate the classifier, we can make our predictions
+#After criate the model, we can make our predictions
 prediction = classifier.predict(predictors_test)
 
 #Here, we check results got through predictions

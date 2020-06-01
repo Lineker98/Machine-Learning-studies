@@ -12,7 +12,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
     
-#Reading database
+#Reading data set
 base = pd.read_csv('../data_census.csv')
 
 #Split the atributes between predictors and classes
@@ -39,7 +39,7 @@ predictors = transformer.fit_transform(predictors).toarray()
 scaler = StandardScaler()
 predictors = scaler.fit_transform(predictors)
 
-#Split the database between training and test data
+#Split the data set between training and test data
 predictors_training, predictors_test, classe_training, classe_test = train_test_split(predictors, classe, test_size=0.15, random_state=0)
 
 #Now, we'll create our instance with decisiontree class , and than, creat our tree model with data training

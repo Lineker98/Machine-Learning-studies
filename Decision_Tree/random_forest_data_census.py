@@ -11,7 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
     
-#Reading database
+#Reading data set
 base = pd.read_csv('data_census.csv')
 
 #Split of the atributes between predictors and classes
@@ -39,7 +39,7 @@ predictors = transformer.fit_transform(predictors).toarray()
 scaler = StandardScaler()
 predictors = scaler.fit_transform(predictors)
     
-#Split of the database between training and test data
+#Split of the data set between training and test data
 predictors_training, predictors_test, classe_training, classe_test = train_test_split(predictors, classe, test_size=0.15, random_state=0)
 
 #Now, we'll create our instance randomforest classifier, and than, creat our model forest with the data training

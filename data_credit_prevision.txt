@@ -26,3 +26,9 @@ accuracy = 83,6% (Incosistent and missing values)
 accuracy = 98,6% (Inconsistent and missingvalies + StandardScaler)
 
 --------------------------------------------
+Logistic regression Algorithm
+
+accuracy = 94,6% (Inconsistent + mising values + StandardScaler)
+accuracy = 93,0% (Inconsistent + missing values)
+
+----------------------------------------------

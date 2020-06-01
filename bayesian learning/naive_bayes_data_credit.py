@@ -10,7 +10,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 
-#Reading of the database
+#Reading data set
 base = pd.read_csv('../data_credit.csv')
 
 #Tratament the inconsistent values
@@ -33,7 +33,7 @@ predictors[:, 1:4] = imputer.transform(predictors[:, 1:4])
 scaler = StandardScaler()
 predictors = scaler.fit_transform(predictors)
 
-#Split of the database into training and test data
+#Split of the data set into training and test data
 predictors_training, predictors_test, classe_training, classe_test = train_test_split(predictors, classe, test_size=0.25, random_state=0)
 
 #Base line classifier
