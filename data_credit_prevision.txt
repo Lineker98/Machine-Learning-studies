@@ -30,5 +30,12 @@ Logistic regression Algorithm
 
 accuracy = 94,6% (Inconsistent + mising values + StandardScaler)
 accuracy = 93,0% (Inconsistent + missing values)
+-----------------------------------------------
+SVM Algorithms
 
-----------------------------------------------
+accuracy = 94,60% (All preprocessing, kernel = linear)
+accuracy = 96.80% (All preprocessing, kernel = poly)
+accuracy = 83.80% (All preprocessing, kernel = sigmoid)
+accuracy = 98.20% (All preprocessing, kernel = rbf, C=1.0)
+
+---------------------------------------------

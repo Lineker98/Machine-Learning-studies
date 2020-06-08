@@ -37,6 +37,11 @@ accuracy = 81,84% (LabelEncodr + StandardScaler)
 accuracy = 79,48% (OneHotEncoder + LabelEncoder)
 
 -----------------------------------------------
+> SVM Algorithm
+
+accuracy = 85,05% (OneHotEncoder + Label + Scaler and kernerl='linear')
+accuracy = 81,35% (Label + Scaler and kernerl='linear')
+------------------------------------------------
 
 
 
