@@ -38,4 +38,11 @@ accuracy = 96.80% (All preprocessing, kernel = poly)
 accuracy = 83.80% (All preprocessing, kernel = sigmoid)
 accuracy = 98.20% (All preprocessing, kernel = rbf, C=1.0)
 
----------------------------------------------
+------------------------------------------------
+-> Neural Network Algorithm scikit-learn
+
+accuracy = 99,60% (All preprocessing, max_iter=500, tol=0.00001, learning_rate='adaptive')
+----------------------------------------------
+-> Neural Network Algorithm keras
+
+accuracy = 99,60% (All preprocessing, Two hidden Layers with activation='relu', optimizer='adam', loss='binary_crossentropy')

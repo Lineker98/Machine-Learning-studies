@@ -22,26 +22,36 @@ accuracy = 83,93% (OneHotEnconder)
 accuracy = 83,90% (OneHotEncoder + StandardScaler)
 accuracy = 84,17% (Only StandardScaler)
 
-----------------------------------------
+-----------------------------------------------------
 -> Knn Algorithm  k = 5 
 
 accuracy = 77,60% (OneHotEncoder + LabelEncoder)
 accuracy = 82,23% (OneHorEncoder + LabelEncode + StandardScaler)
 accuracy = 82,19% (OneHotEncoder + StandardScaler)
 
-------------------------------------------
+------------------------------------------------------
 -> Logistic regression Algorithm
 
 accuracy = 84,95% (OneHotEncoder + LabelEncoder + StandardScaler)
 accuracy = 81,84% (LabelEncodr + StandardScaler)
 accuracy = 79,48% (OneHotEncoder + LabelEncoder)
 
------------------------------------------------
+---------------------------------------------------------
 > SVM Algorithm
 
 accuracy = 85,05% (OneHotEncoder + Label + Scaler and kernerl='linear')
 accuracy = 81,35% (Label + Scaler and kernerl='linear')
-------------------------------------------------
+----------------------------------------------------------
+-> Neural Networks - scikit-learn
+
+accuracy = 82,55% (All preprocessing, max_iter=500, tol=0.00001)
+accuracy = 81,02% (LabelEncoder, max_iter=500, tol=0.00001)
+accuracy = 84,31% (LabelEncoder, StandardScaler, max_iter=500, tol=0.00001)
+-----------------------------------------------------------
+-> Neural Network Algorithm keras
+
+accuracy = 78,05% (All preprocessing, Two hidden Layers with activation='relu' and 55 units, optimizer='adam', loss='binary_crossentropy')
+accuracy = 84,68% (Only StandardScaler, Two hidden Layers with activation='relu' and 8 units, optimizer='adam', loss='binary_crossentropy')
 
 
 
